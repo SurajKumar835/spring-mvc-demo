@@ -2,6 +2,6 @@
 <html>
 <body>
 	hello world Spring!!
-	Student name:${param.studentName}
+	Student name:${message}
 </body>
 </html>
