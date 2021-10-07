@@ -17,5 +17,7 @@ Student Details Entered!!</title></head>
 	<li>${temp}</li>
 	</c:forEach>	
 	</ul>
+	<br><br>
+	Course Code:${student.courseCode}
 </body>
 </html>

@@ -3,13 +3,22 @@
 <html>
 <head>
 <title>Student form fill it up !!</title>
+<style> error{color:red;}</style>
 </head>
 <body>
 <hr>
 <form:form action="processForm" modelAttribute="student">
 FirstName:<form:input path="firstName"/>
+<form:errors path="firstName" cssClass="error"></form:errors>
 <br><br>
-LastName:<form:input path="lastName"/>
+LastName(*):<form:input path="lastName"/>
+<form:errors path="lastName" cssClass="error"></form:errors>
+<br><br>
+No of Way:<form:input path="noWay"/>
+<form:errors path="noWay" cssClass="error"></form:errors>
+<br><br>
+Course Code:<form:input path="courseCode"/>
+<form:errors path="courseCode" cssClass="error"></form:errors>
 <br><br>
 <p>dropdownlist</p>
 Country:<form:select path="country">
